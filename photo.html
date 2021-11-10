@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+    </style>
+    <title>Bank</title>
+    <link rel="stylesheet" href="photo.css">
+</head>
+<body>
+
+        <div class="login-div">
+            <div class="logo"></div>
+           
+            <div class="fields">
+                <h2>Upload Your Image</h2><br>
+        <!-- <p class="lead">No Plugins <b>Just Javascript</b></p> -->
+        <form action="" method="post" id="file-upload-form" class="uploader">
+        <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+        <label for="file-upload" id="file-drag">
+            <img id="file-image" src="#" alt="Preview" class="hidden">
+            <div id="start">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <div>Select a file or drag here</div>
+            <div id="notimage" class="hidden">Please select an image</div>
+            <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+            </div>
+            <div id="response" class="hidden">
+            <div id="messages"></div>
+            <progress class="progress" id="file-progress" value="0">
+                <span>0</span>%
+            </progress>
+            </div>
+        </label>
+        <input type="text" name="src" id='img_src'>
+        <input type="submit" value="Submit" class='signin-button'>
+        </form>
+        <script src="photo.js"></script>
+                </div>
+            </div>
+          <!--  <button class="signin-button"><a href="branch.html">Submit</a></button>-->
+        </div>
+</body>
+</html>
